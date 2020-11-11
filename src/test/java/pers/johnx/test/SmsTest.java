@@ -14,15 +14,15 @@ public class SmsTest {
         String host = "http://dingxin.market.alicloudapi.com";
         String path = "/dx/sendSms";
         String method = "POST";
-        String appcode = "0718b6ee281f4dab84ec27baf3cd1f06";
+        String appcode = "****";  //开通过后会有一个个人独有的appcode
 
         Map<String, String> headers = new HashMap<>();
 
         headers.put("Authorization", "APPCODE "+appcode);
         Map<String, String> querys = new HashMap<String, String>();
-        querys.put("mobile", "19937653675");
-        querys.put("param", "code:193539");
-        querys.put("tpl_id", "TP1711063");
+        querys.put("mobile", "***");  //接收手机号
+        querys.put("param", "code:***");  //验证码
+        querys.put("tpl_id", "TP1711063");  //短信模板
 
         Map<String, String> bodys = new HashMap<>();
 
